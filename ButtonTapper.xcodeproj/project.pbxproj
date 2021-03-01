@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -158,7 +158,7 @@
 				};
 			};
 			buildConfigurationList = D227485A25ED46D70061186C /* Build configuration list for PBXProject "ButtonTapper" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -434,7 +434,7 @@
 				D227488325ED46D80061186C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D227488425ED46D80061186C /* Build configuration list for PBXNativeTarget "ButtonTapper" */ = {
 			isa = XCConfigurationList;
@@ -443,7 +443,7 @@
 				D227488625ED46D80061186C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		D227488725ED46D80061186C /* Build configuration list for PBXNativeTarget "ButtonTapperTests" */ = {
 			isa = XCConfigurationList;
@@ -452,7 +452,7 @@
 				D227488925ED46D80061186C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
