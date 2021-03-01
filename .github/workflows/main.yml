@@ -11,12 +11,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install gems
-        run: gem install slather
+        run: gem install slather danger-slather
       - name: Build
         run: xcodebuild -scheme ButtonTapper -project ButtonTapper.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Test
         run: xcodebuild test -scheme ButtonTapperTests -project ButtonTapper.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-      - name: Check Code Coverage
-        run: slather
-        shell: bash 
+      
+    name: Run Danger
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Danger
+      - with:
+          args: --failOnErrors --no-publish-check
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
