@@ -1,3 +1,3 @@
-slather.configure("ButtonTapper.xcodeproj", "ButtonTapperTests")
+slather.configure("ButtonTapper.xcodeproj", "ButtonTapper")
 
 slather.show_coverage
