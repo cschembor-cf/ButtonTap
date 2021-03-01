@@ -12,11 +12,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install gems
         run: gem install slather
-      - uses: sersoft-gmbh/xcodebuild-action@v1
-        with:
-          project: ButtonTapper.xcodeproj
-          scheme: ButtonTapperTests
-          action: test
+      - name: Build
+        run: xcodebuild -scheme ButtonTapper -project ButtonTapper.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+      - name: Test
+        run: xcodebuild test -scheme ButtonTapperTests -project ButtonTapper.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Check Code Coverage
         run: slather
         shell: bash 
