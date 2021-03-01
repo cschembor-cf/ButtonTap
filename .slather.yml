@@ -1,2 +1,3 @@
 xcodeproj: ./ButtonTapper.xcodeproj
 scheme: ButtonTapper
+binary_basename: ButtonTapper
