@@ -1,2 +1,2 @@
-xcodeproj: ../ButtonTapper.xcodeproj
-scheme: ButtonTapper
+xcodeproj: ./ButtonTapper.xcodeproj
+scheme: ButtonTapperTests
