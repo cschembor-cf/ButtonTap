@@ -16,7 +16,6 @@ jobs:
         with:
           project: ButtonTapper.xcodeproj
           scheme: ButtonTapper
-          destination: platform='iOS Simulator, id:D149E532-37A8-4891-9B6E-D55179A9C0FF, OS:14.4, name:iPhone 12'
           action: test
       - name: Check Code Coverage
         run: slather
