@@ -19,5 +19,5 @@ jobs:
       - name: Danger
         env:
           GITHUB_TOKEN: ${{ secrets.DANGER_API_GITHUB_TOKEN }}
-        run: danger
+        run: rbenv global 2.3.1 && gem install danger --version '~> 5.0' && danger
 
