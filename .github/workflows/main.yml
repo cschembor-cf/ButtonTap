@@ -17,7 +17,7 @@ jobs:
       - name: Test
         run: xcodebuild test -scheme ButtonTapperTests -project ButtonTapper.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Danger
-        run: danger
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DANGER_API_GITHUB_TOKEN }}
+        run: danger
 
