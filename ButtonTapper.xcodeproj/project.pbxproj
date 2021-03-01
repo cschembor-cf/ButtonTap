@@ -12,18 +12,10 @@
 		D227486725ED46D80061186C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D227486625ED46D80061186C /* Assets.xcassets */; };
 		D227486A25ED46D80061186C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D227486925ED46D80061186C /* Preview Assets.xcassets */; };
 		D227487525ED46D80061186C /* ButtonTapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227487425ED46D80061186C /* ButtonTapperTests.swift */; };
-		D227488025ED46D80061186C /* ButtonTapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D227487F25ED46D80061186C /* ButtonTapperUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		D227487125ED46D80061186C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D227485725ED46D70061186C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D227485E25ED46D70061186C;
-			remoteInfo = ButtonTapper;
-		};
-		D227487C25ED46D80061186C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D227485725ED46D70061186C /* Project object */;
 			proxyType = 1;
@@ -42,9 +34,6 @@
 		D227487025ED46D80061186C /* ButtonTapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonTapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D227487425ED46D80061186C /* ButtonTapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapperTests.swift; sourceTree = "<group>"; };
 		D227487625ED46D80061186C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D227487B25ED46D80061186C /* ButtonTapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonTapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D227487F25ED46D80061186C /* ButtonTapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTapperUITests.swift; sourceTree = "<group>"; };
-		D227488125ED46D80061186C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +51,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D227487825ED46D80061186C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,7 +59,6 @@
 			children = (
 				D227486125ED46D70061186C /* ButtonTapper */,
 				D227487325ED46D80061186C /* ButtonTapperTests */,
-				D227487E25ED46D80061186C /* ButtonTapperUITests */,
 				D227486025ED46D70061186C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +68,6 @@
 			children = (
 				D227485F25ED46D70061186C /* ButtonTapper.app */,
 				D227487025ED46D80061186C /* ButtonTapperTests.xctest */,
-				D227487B25ED46D80061186C /* ButtonTapperUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,15 +99,6 @@
 				D227487625ED46D80061186C /* Info.plist */,
 			);
 			path = ButtonTapperTests;
-			sourceTree = "<group>";
-		};
-		D227487E25ED46D80061186C /* ButtonTapperUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D227487F25ED46D80061186C /* ButtonTapperUITests.swift */,
-				D227488125ED46D80061186C /* Info.plist */,
-			);
-			path = ButtonTapperUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,24 +139,6 @@
 			productReference = D227487025ED46D80061186C /* ButtonTapperTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D227487A25ED46D80061186C /* ButtonTapperUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D227488A25ED46D80061186C /* Build configuration list for PBXNativeTarget "ButtonTapperUITests" */;
-			buildPhases = (
-				D227487725ED46D80061186C /* Sources */,
-				D227487825ED46D80061186C /* Frameworks */,
-				D227487925ED46D80061186C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D227487D25ED46D80061186C /* PBXTargetDependency */,
-			);
-			name = ButtonTapperUITests;
-			productName = ButtonTapperUITests;
-			productReference = D227487B25ED46D80061186C /* ButtonTapperUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,10 +152,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					D227486F25ED46D80061186C = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = D227485E25ED46D70061186C;
-					};
-					D227487A25ED46D80061186C = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = D227485E25ED46D70061186C;
 					};
@@ -223,7 +172,6 @@
 			targets = (
 				D227485E25ED46D70061186C /* ButtonTapper */,
 				D227486F25ED46D80061186C /* ButtonTapperTests */,
-				D227487A25ED46D80061186C /* ButtonTapperUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -239,13 +187,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D227486E25ED46D80061186C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D227487925ED46D80061186C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,14 +213,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D227487725ED46D80061186C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D227488025ED46D80061186C /* ButtonTapperUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -287,11 +220,6 @@
 			isa = PBXTargetDependency;
 			target = D227485E25ED46D70061186C /* ButtonTapper */;
 			targetProxy = D227487125ED46D80061186C /* PBXContainerItemProxy */;
-		};
-		D227487D25ED46D80061186C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D227485E25ED46D70061186C /* ButtonTapper */;
-			targetProxy = D227487C25ED46D80061186C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -496,44 +424,6 @@
 			};
 			name = Release;
 		};
-		D227488B25ED46D80061186C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ButtonTapperUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.connor.ButtonTapperUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ButtonTapper;
-			};
-			name = Debug;
-		};
-		D227488C25ED46D80061186C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ButtonTapperUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.connor.ButtonTapperUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ButtonTapper;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -560,15 +450,6 @@
 			buildConfigurations = (
 				D227488825ED46D80061186C /* Debug */,
 				D227488925ED46D80061186C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D227488A25ED46D80061186C /* Build configuration list for PBXNativeTarget "ButtonTapperUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D227488B25ED46D80061186C /* Debug */,
-				D227488C25ED46D80061186C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
