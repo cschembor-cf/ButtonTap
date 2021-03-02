@@ -1,6 +1,6 @@
 name: Build
 
-on: [push]
+on: [pull_request]
 env:
   DEVELOPER_DIR: /Applications/Xcode_12.4.app/Contents/Developer
 
@@ -11,13 +11,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install gems
-        run: gem install slather danger-slather
+        run: gem install slather danger-slather danger-swiftlint
       - name: Build
         run: xcodebuild -scheme ButtonTapper -project ButtonTapper.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Test
         run: xcodebuild test -scheme ButtonTapperTests -project ButtonTapper.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+      - name: Slather
+        run: slather
+        shell: bash
       - name: Danger
-        run: danger
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DANGER_GITHUB_API_TOKEN: ${{ secrets.DANGER_GITHUB_API_TOKEN}}
+        run: gem install danger --version '~> 5.0' && danger
 
