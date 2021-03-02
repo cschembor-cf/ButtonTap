@@ -34,4 +34,14 @@ class ButtonTapperTests: XCTestCase {
         }
     }
 
+    func testSubtraction() {
+
+        let num = 5
+        let sub = Subtraction()
+
+        let expectedResult = 4
+        let actualResult = sub.subtractOne(num)
+        XCTAssertEqual(actualResult, expectedResult)
+    }
+
 }
