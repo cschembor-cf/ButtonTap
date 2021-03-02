@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install gems
-        run: gem install slather danger-slather
+        run: gem install slather danger-slather danger-swiftlint
       - name: Build
         run: xcodebuild -scheme ButtonTapper -project ButtonTapper.xcodeproj -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 12,OS=14.4' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
       - name: Test
