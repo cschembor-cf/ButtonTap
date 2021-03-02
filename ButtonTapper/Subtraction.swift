@@ -12,5 +12,9 @@ class Subtraction {
     func subtractOne(_ num: Int) -> Int {
 
         num - 1
+
+
+
+
     }
 }
