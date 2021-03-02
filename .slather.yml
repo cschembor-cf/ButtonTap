@@ -1,3 +1,5 @@
 xcodeproj: ./ButtonTapper.xcodeproj
 scheme: ButtonTapperTests
 binary_basename: ButtonTapper
+ignore:
+  - ./ButtonTapper/Test.swift
